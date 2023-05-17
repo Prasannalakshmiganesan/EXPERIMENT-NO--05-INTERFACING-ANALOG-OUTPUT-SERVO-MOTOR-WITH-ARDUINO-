@@ -88,12 +88,12 @@ void loop()
 }
 ```
 
-**##SERIAL MONITOR**:
+## SERIAL MONITOR:
 ![lambo](https://github.com/Prasannalakshmiganesan/EXPERIMENT-NO--05-INTERFACING-ANALOG-OUTPUT-SERVO-MOTOR-WITH-ARDUINO-/assets/118610231/76680e8f-b067-4ecf-b444-eae856e2e22e)
 
 ![lambo2](https://github.com/Prasannalakshmiganesan/EXPERIMENT-NO--05-INTERFACING-ANALOG-OUTPUT-SERVO-MOTOR-WITH-ARDUINO-/assets/118610231/1e28b3c8-8b86-40ef-8345-7dc22c6b3f80)
 
-**##OUTPUT:**
+## OUTPUT:
 ![Uploading Screenshot (172).png…]()
 
 
