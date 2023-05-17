@@ -49,8 +49,7 @@ An external controller (such as the Arduino) tells the servo where to go with a 
 
 CIRCUIT DIAGRAM
  
- 
- ![image](https://user-images.githubusercontent.com/36288975/163544618-6eb8a7b5-7f1a-428a-8d9f-fd899b145efb.png)
+![image](https://user-images.githubusercontent.com/36288975/163544618-6eb8a7b5-7f1a-428a-8d9f-fd899b145efb.png)
 
 ### FIGURE 04 CIRCUIT DIAGRAM
 
@@ -67,14 +66,38 @@ CIRCUIT DIAGRAM
 
 
 ### PROGRAM :
- 
+ ```
+ #include <Servo.h>
+Servo myservo;
+int value;
+double angle;
+
+void setup()
+{
+  Serial.begin(9600);
+  myservo.attach(9);
+}
+
+void loop()
+{
+  value = analogRead(A0);
+  angle = map(value, 0, 1023, 0, 180);
+  Serial.println(angle);
+  myservo.write(angle);
+  delay(15);
+}
+```
+
+**##SERIAL MONITOR**:
+![lambo](https://github.com/Prasannalakshmiganesan/EXPERIMENT-NO--05-INTERFACING-ANALOG-OUTPUT-SERVO-MOTOR-WITH-ARDUINO-/assets/118610231/76680e8f-b067-4ecf-b444-eae856e2e22e)
+
+![lambo2](https://github.com/Prasannalakshmiganesan/EXPERIMENT-NO--05-INTERFACING-ANALOG-OUTPUT-SERVO-MOTOR-WITH-ARDUINO-/assets/118610231/1e28b3c8-8b86-40ef-8345-7dc22c6b3f80)
+
+**##OUTPUT:**
+![Uploading Screenshot (172).png…]()
 
 
-
-
-
-
-
+![Screenshot (173)](https://github.com/Prasannalakshmiganesan/EXPERIMENT-NO--05-INTERFACING-ANALOG-OUTPUT-SERVO-MOTOR-WITH-ARDUINO-/assets/118610231/7672a240-637d-4f42-ac9d-c9c8c7f00dc7)
 
 
 ### RESULTS: 
